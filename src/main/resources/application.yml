@@ -1,0 +1,30 @@
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-request-size: 10MB
+      max-file-size: 10MB
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/chatting
+    username: root
+    password: lyi98549854
+
+  jpa:
+    hibernate: # hibernate ?? ??
+      ddl-auto: none
+    properties: # property ?? ??
+      hibernate: # hibernate property ??
+        format_sql: true
+        show_sql: true
+
+jwt:
+  secret: WW1sdVpFbHVkR1Z5YmxCeWIycGxZM1JQYm1WTWFXNWxSR2xoY25sVFpXTnlaWFJMWlhrWW1sdVpFbHVkR1Z5YmxCeWIycGxZM1JQYm1WTWFXNWxSR2xoY25sVFpXTnlaWFJMWlhr
+  accessExpire: 86400000000000
+  refreshExpire: 120960000000000
+
+server:
+  port: 8090
+
+
